@@ -36,7 +36,7 @@ void handleRoot(){
   
   if (n > 0) {
     for (int i = 0; i < n; i++){
-      Page += String(F("\r\n<tr><td>SSID "))+WiFi.SSID(i)+((WiFi.encryptionType(i)==ENC_TYPE_NONE) ? F(" ") : F(" *")) + F(" (")+WiFi.RSSI(i)+F(")</td></tr>"); 
+      Page += String(F("\r\n<tr><td>SSID <b>"))+WiFi.SSID(i)+F("</b>")+((WiFi.encryptionType(i)==ENC_TYPE_NONE) ? F(" ") : F(" *")) + F(" (")+WiFi.RSSI(i)+F(")</td></tr>"); 
      }
   } else {
     Page += F("<tr><td>No WLAN found</td></tr>");
