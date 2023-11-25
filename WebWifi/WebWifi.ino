@@ -21,7 +21,7 @@ void handleRoot(){
   Page += F("<!DOCTYPE html><html lang='pt-br'><head>"
             "<meta charset='UTF-8'>"
             "<meta name='viewport' content='width=device-width'>"
-            "<title>CaptivePortal</title></head><body>"
+            "<title>WiFi Config</title></head><body>"
             "<h1>Wifi config</h1>");
 
   Page += String(F("<p>Você está conectado a rede WiFI: <b>")) + ssid + F("</b></p>");
